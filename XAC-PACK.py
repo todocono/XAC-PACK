@@ -1,5 +1,5 @@
 
-import pygame
+import pygame, buttons
 
 global menu
 
@@ -106,30 +106,6 @@ def fnUP():
     print('UP')
 
   
-def fnDOWN_down():
-    print('DOWN pressed')
-def fnDOWN_up():
-    print('DOWN released')
-def fnLEFT_down():
-    print('LEFt pressed!')
-def fnLEFT_up():
-    print('LEFt released!')  
-def fnRIGHT_down():
-    print('RIGHT pressed')
-def fnRIGHT_up():
-    print('RIGHT released')
-def fnUP_down():
-    print('UP pressed')
-def fnUP_up():
-    print('UP released')
-def fnCLICK_down():
-    print('CLICK pressed')
-def fnCLICK_up():
-    print('CLICK released')
-def fnRCLICK_down():
-    print('R-CLICK pressed')
-def fnRCLICK_up():
-    print('R-CLICK released')
 
    
 if __name__ == '__main__':
@@ -155,10 +131,10 @@ if __name__ == '__main__':
     buttonBACK = button(position=(w/2, h/2), size=(w/2, h/2), clr=(220, 220, 220), cngclr=(255, 0, 0), func=fnBACK, text='Back', font_size = font_size)
     
   #MENU PLAY
-    buttonLEFT = button(position=(w/9, h/2), size=(w/3, h), clr=(220, 220, 220), cngclr=(255, 0, 0), func=fnLEFT, func_down=fnLEFT_down, func_up=fnLEFT_up, text='LEFT', font_size = font_size)
-    buttonRIGHT = button((8*w/9, h/2), (w/3, h), (220, 220, 220), (255, 0, 0), fnRIGHT, fnRIGHT_down, fnRIGHT_up, 'RIGHT', font_size = font_size)
-    buttonUP = button(position=(w/2, h/9), size=(w, h/3), clr=(220, 220, 220), cngclr=(255, 0, 0), func=fnUP, func_down=fnUP_down, func_up=fnUP_up, text='UP', font_size = font_size)
-    buttonDOWN = button((w/2, 8*h/9), (w, h/3), (220, 220, 220), (255, 0, 0), fnDOWN, fnDOWN_down, fnDOWN_up, 'DOWN', font_size = font_size)
+    buttonLEFT = button(position=(w/9, h/2), size=(w/3, h), clr=(220, 220, 220), cngclr=(255, 0, 0), func=fnLEFT, func_down=buttons.fnLEFT_down, func_up=buttons.fnLEFT_up, text='LEFT', font_size = font_size)
+    buttonRIGHT = button((8*w/9, h/2), (w/3, h), (220, 220, 220), (255, 0, 0), fnRIGHT, buttons.fnRIGHT_down, buttons.fnRIGHT_up, 'RIGHT', font_size = font_size)
+    buttonUP = button(position=(w/2, h/9), size=(w, h/3), clr=(220, 220, 220), cngclr=(255, 0, 0), func=fnUP, func_down=buttons.fnUP_down, func_up=buttons.fnUP_up, text='UP', font_size = font_size)
+    buttonDOWN = button((w/2, 8*h/9), (w, h/3), (220, 220, 220), (255, 0, 0), fnDOWN, buttons.fnDOWN_down, buttons.fnDOWN_up, 'DOWN', font_size = font_size)
 
 
   
@@ -190,9 +166,9 @@ if __name__ == '__main__':
 
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
-                      fnCLICK_down()
+                      buttons.fnCLICK_down()
                 elif event.button == 3:
-                      fnRCLICK_down()
+                      buttons.fnRCLICK_down()
               
                 if event.button == 1:
                     pos = pygame.mouse.get_pos()
@@ -202,9 +178,9 @@ if __name__ == '__main__':
                           
             elif event.type == pygame.MOUSEBUTTONUP:
                 if event.button == 1:
-                      fnCLICK_up()
+                      buttons.fnCLICK_up()
                 elif event.button == 3:
-                      fnRCLICK_up()
+                      buttons.fnRCLICK_up()
 
 
 
