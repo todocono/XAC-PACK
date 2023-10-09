@@ -1,4 +1,17 @@
 
+# Part of of https://github.com/todocono/XAC-PACK
+
+# Clients: Children's Hospital Eastern Ontario
+# Organization: Tetra Society
+
+# Released under RG-M Pacifist License, which is basically a MIT modified license.
+# (original MIT license is available on http://www.opensource.org/licenses/mit-license).
+# The main amendment prevents the work under license or any other drived work from:
+# war purposes, or purposes related to death penalty.
+
+# Coded by Rodolfo Cossovich
+# Latest update: 2023-10-09
+
 import pygame, buttons
 
 global menu
