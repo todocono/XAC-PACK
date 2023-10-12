@@ -1,14 +1,15 @@
-// Wire Slave Receiver
+// Part of of https://github.com/todocono/XAC-PACK
+
+// Released under RG-M Pacifist License, which is basically a MIT modified license.
+// (original MIT license is available on http://www.opensource.org/licenses/mit-license).
+// The main amendment prevents the work under license or any other drived work from:
+// war purposes, or purposes related to death penalty.
+
+// Coded by Rodolfo Cossovich
+// Uses code from Wire Slave Receiver
 // by Nicholas Zambetti <http://www.zambetti.com>
 
-// Demonstrates use of the Wire library
-// Receives data as an I2C/TWI slave device
-// Refer to the "Wire Master Writer" example for use with this
-
-// Created 29 March 2006
-
-// This example code is in the public domain.
-
+// Latest update: 2023-10-12
 
 //#include "HID-Project.h"
 #include <Wire.h>
@@ -102,4 +103,44 @@ void receiveEvent(int howMany) {
     pinMode(8, INPUT_PULLUP);
     digitalWrite(8, HIGH);  // turn the LED on (HIGH is the voltage level)
   }
+}
+
+
+void test(){
+  pinMode(13, OUTPUT);
+  digitalWrite(13, LOW);  // turn the LED off by making the voltage LOW
+  delay(1000);            // wait for a second
+  pinMode(13, INPUT_PULLUP);
+  digitalWrite(13, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);             // wait for a second
+  pinMode(12, OUTPUT);
+  digitalWrite(12, LOW);  // turn the LED off by making the voltage LOW
+  delay(1000);            // wait for a second
+  pinMode(12, INPUT_PULLUP);
+  digitalWrite(12, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);
+  pinMode(11, OUTPUT);
+  digitalWrite(11, LOW);  // turn the LED off by making the voltage LOW
+  delay(1000);            // wait for a second
+  pinMode(11, INPUT_PULLUP);
+  digitalWrite(11, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);
+  pinMode(10, OUTPUT);
+  digitalWrite(10, LOW);  // turn the LED off by making the voltage LOW
+  delay(1000);            // wait for a second
+  pinMode(10, INPUT_PULLUP);
+  digitalWrite(10, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);
+  pinMode(9, OUTPUT);
+  digitalWrite(9, LOW);  // turn the LED off by making the voltage LOW
+  delay(1000);           // wait for a second
+  pinMode(9, INPUT_PULLUP);
+  digitalWrite(9, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);
+  pinMode(8, OUTPUT);
+  digitalWrite(8, LOW);  // turn the LED off by making the voltage LOW
+  delay(1000);           // wait for a second
+  pinMode(8, INPUT_PULLUP);
+  digitalWrite(8, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);
 }
