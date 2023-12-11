@@ -4,7 +4,7 @@ Pack for Xbox Adaptive Controller (XAC), to allow bluetooth wheelchair controlle
 This project was developed for the Children's Hospital Eastern Ontario (CHEO), by volunteers at TETRA SOCIETY (https://tetrasociety.org/).
 
 
-![Playing]([guts.jpg?raw=true](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnR1anhoYmY3Zm92NWc3ZjVjcmJhNzhpMmhrdm9pYWpuNnQ4dXZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BelkuHviGIwJeQ5Tob/giphy-downsized-large.gif) "Inner cabling")
+![Playing](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnR1anhoYmY3Zm92NWc3ZjVjcmJhNzhpMmhrdm9pYWpuNnQ4dXZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BelkuHviGIwJeQ5Tob/giphy-downsized-large.gif "Inner cabling")
 
 
 
