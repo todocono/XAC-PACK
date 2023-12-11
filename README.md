@@ -1,21 +1,60 @@
 # XAC-PACK
-Pack for Xbox Adaptive Controller, to allow bluetooth wheelchair controllers to play with XBOX. 
+Pack for Xbox Adaptive Controller (XAC), to allow bluetooth wheelchair controllers to play with XBOX. 
 
 This project was developed for the Children's Hospital Eastern Ontario, under the frame of TETRA SOCIETY (https://tetrasociety.org/).
 
-Credits for ideation and first trials go to:
-- Omar Masaud (2020 -2021): name, architecture, and general solution
-- Arash Abarghooei (2022-2023): research & tests
-- Rodolfo Cossovich (2023): implementation
+## Set Up:
+If the wheelchair BLE controller is already added, the setup would only need:
+- Plug in the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
+- Plug in the USB-C power of the Raspberry Pi of the XAC-Pack.
+- Turn on the power (switch on the USB-C cable)
+- Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK
+
+## Usage:
+- As the BLE pairs automatically, the movements of the wheelchair controller should translate into XAC movements.
+- Moving UP, LEFT, RIGHT, DOWN are all mapped (with a sensitivity threshold) to the 4 digital inputs of the XAC.
+- Pressing A or B buttons are linked to left-click and right-click respectively. This, in the Permobil chair are programmed gestures to rapid-left and rapid-right gestures.
+
+## Testing:
+With the XAC connected to a PC, run the XBOX accessories app. The test lab mode shows what the XAC is sensing.
+
+## Adding New Devices:
+By default, BLE should be pair/trusted/connected automatically. But if it's a new device, there are two ways to add them.
+
+You will need a keyboard connected to any of the USB of the Raspberry Pi. After connecting the keyboard, you should press the ESC key. The mouse is optional because the device has a touchscreen, but recommended.
+
+Below are general detail instructions; in-detail instructions are at https://pimylifeup.com/raspberry-pi-bluetooth/#:~:text=To%20load%20the%20Bluetooth%20GUI,Manager%20%E2%80%9D%20(2.).
+
+
+#Using Graphical User Interface (GUI):
+- Click on the Bluetooth symbol. Click on the Add a new device. Pair the device with it.
+- Click again and select Connect from the drop-down menu.
+If the above steps are not working, you can try to go to Preferences/Bluetooth Manager
+
+#Using Command Line Interpreter (CLI):
+- From the terminal, enter 'bluetoothctl' and within it, type 'agent on', 'discoverable on', and 'scan on'
+- You will have a list of MAC addresses to pair with. Sometimes (like Permobil), the addresses do not show a name.
+- You need to find the MAC corresponding to the device (or guess) and type 'pair nn:nn:nn:nn', 'connect n:nn:nn:nn', 'trust n:nn:nn:nn'
+
+
+
+
+
+
+
+
+
+
+
 
 ## Hardware req:
-
 Raspberry Pi 3B+ (probably any other with Bluetooth capabilities could also work)
 Arduino Nano 33 IoT (Leonardo or RP2040 with HID media USB capabilities could also work)
 
 ## Software:
-Raspbian OS for 
-XAC-PACK.py ---> handles Bluetooth 
+Raspbian OS 
+buttons.py ---> handles the communication from the Raspberry to Arduino, sending commands over i2c
+init.py ---> handles the GUI and captures the mouse movement.
 XAC-PACK.ino ---> handles the i2c communication from Rpi, capturing the commands, and translating them into USB commands to the Xbox Adaptive controllers. The way to handle the USB-HID is heavily inspired by the FreedomWing board made by the AT makers (http://atmakers.org/freedomwing-build/)
 
 ## Installation:
@@ -23,12 +62,17 @@ Flash XAC-PACK.ino into the Arduino 33 IoT
 Connect 3 cables for SCL, SDA and GND from Arduino to Rpi
 Connect USB from Arduino to Xbox Adaptive controller 
 Configure Rpi to run on Raspbberry Pi OS (https://www.raspberrypi.com/software/)
+Configure Rpi to enable Bluetooth, and i2c
 Make sure Rpi and the wheelchair controller can see each other (use bluetoothctl, pair, trust, connect if the GUI fails)
-Configure Rpi to run XAC-PACK.py to run on startup (similar to https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/)
-
+Configure Rpi to run init.py on startup (similar to https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/)
 
 
 ## Future work:
 - have a configuration page to connect to different BT devices
-- capture gestures to configure the different movements
-- embed the Rpi, Arduino and a 3.5" touch screen in a case
+
+## Credits
+- Omar Masaud (2020 -2021): name, architecture, and general solution (v1.0)
+- Arash Abarghooei (2022-2023): research & tests (v1.1)
+- Rodolfo Cossovich (2023): implementation (v1.2 and v1.3)
+
+
