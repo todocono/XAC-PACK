@@ -6,9 +6,6 @@ This project was developed for the Children's Hospital Eastern Ontario (CHEO), b
 
 ![Playing](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjRmMGhqbmMybnAwbHF4aThmczUzYXN3ZHcwa2wzanZsenhpdDF3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BelkuHviGIwJeQ5Tob/giphy-downsized.gif)
 
-
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
 ## Set Up:
 If the wheelchair BLE controller is already added, the setup would only need:
 - Plug the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
