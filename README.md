@@ -7,9 +7,8 @@ This project was developed for the Children's Hospital Eastern Ontario, under th
 If the wheelchair BLE controller is already added, the setup would only need:
 - Plug in the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
 - Plug in the USB-C power of the Raspberry Pi of the XAC-Pack.
-- Turn on the power (switch on the USB-C cable)
-  ![USB cable](USB.jpg?raw=true "USB")
-- Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK
+- Turn on the power (switch on the USB-C cable) ![USB cable](USB.jpg?raw=true "USB")
+- Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK ![Booting](boot.jpg?raw=true "Splash Screen")
 
 ## Usage:
 - As the BLE pairs automatically, the movements of the wheelchair controller should translate into XAC movements.
