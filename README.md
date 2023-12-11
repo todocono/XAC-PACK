@@ -30,7 +30,7 @@ By default, BLE should be pair/trusted/connected automatically. But if it's a ne
 
 You will need a keyboard connected to any of the USB of the Raspberry Pi. After connecting the keyboard, you should press the ESC key. The mouse is optional because the device has a touchscreen, but recommended.
 
-![Keyboard & Mouse](keyboard.jpg?raw=true "Keyboard & Mouse")
+![Keyboard & Mouse](image.jpg?raw=true "Keyboard & Mouse")
 
 Below are general detail instructions; in-detail instructions are at https://pimylifeup.com/raspberry-pi-bluetooth/#:~:text=To%20load%20the%20Bluetooth%20GUI,Manager%20%E2%80%9D%20(2.).
 
