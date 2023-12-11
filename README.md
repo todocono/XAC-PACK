@@ -1,7 +1,12 @@
 # XAC-PACK
 Pack for Xbox Adaptive Controller (XAC), to allow bluetooth wheelchair controllers to play with XBOX. 
 
-This project was developed for the Children's Hospital Eastern Ontario, under the frame of TETRA SOCIETY (https://tetrasociety.org/).
+This project was developed for the Children's Hospital Eastern Ontario (CHEO), by volunteers at TETRA SOCIETY (https://tetrasociety.org/).
+
+
+![Playing]([guts.jpg?raw=true](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnR1anhoYmY3Zm92NWc3ZjVjcmJhNzhpMmhrdm9pYWpuNnQ4dXZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BelkuHviGIwJeQ5Tob/giphy-downsized-large.gif) "Inner cabling")
+
+
 
 ## Set Up:
 If the wheelchair BLE controller is already added, the setup would only need:
@@ -50,15 +55,10 @@ If the above steps are not working, you can try to go to Preferences/Bluetooth M
 
 
 
-
-
-
-
-
-
 ## Hardware req:
 Raspberry Pi 3B+ (probably any other with Bluetooth capabilities could also work)
 Arduino Leonardo (Nano 33 IoT (or RP2040 with HID media USB capabilities could also work)
+
 ![Booting](guts.jpg?raw=true "Inner cabling")
 
 ## Software:
