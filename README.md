@@ -8,6 +8,7 @@ If the wheelchair BLE controller is already added, the setup would only need:
 - Plug in the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
 - Plug in the USB-C power of the Raspberry Pi of the XAC-Pack.
 - Turn on the power (switch on the USB-C cable)
+  ![USB cable](USB.jpg?raw=true "USB")
 - Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK
 
 ## Usage:
@@ -69,6 +70,7 @@ Configure Rpi to run init.py on startup (similar to https://www.instructables.co
 
 ## Future work:
 - have a configuration page to connect to different BT devices
+- Fully functional simulation. A mockup was created here: https://replit.com/@todocono/XAC-PACK#main.py
 
 ## Credits
 - Omar Masaud (2020 -2021): name, architecture, and general solution (v1.0)
