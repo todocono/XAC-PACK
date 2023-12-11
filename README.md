@@ -6,11 +6,14 @@ This project was developed for the Children's Hospital Eastern Ontario, under th
 ## Set Up:
 If the wheelchair BLE controller is already added, the setup would only need:
 - Plug the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
+  
 ![Aux cable](AB.jpg?raw=true "Aux cables")
 - Plug in the USB-C power of the Raspberry Pi of the XAC-Pack.
 - Turn on the power (switch on the USB-C cable)
+
 ![USB cable](USB.jpg?raw=true "USB")
 - Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK
+
 ![Booting](boot.jpg?raw=true "Splash Screen")
 ![Fnctioning Screen](screen.jpg?raw=true "Functioning Screen")
 
@@ -26,6 +29,7 @@ With the XAC connected to a PC, run the XBOX accessories app. The test lab mode 
 By default, BLE should be pair/trusted/connected automatically. But if it's a new device, there are two ways to add them.
 
 You will need a keyboard connected to any of the USB of the Raspberry Pi. After connecting the keyboard, you should press the ESC key. The mouse is optional because the device has a touchscreen, but recommended.
+
 ![Keyboard & Mouse](keyboard.jpg?raw=true "Keyboard & Mouse")
 
 Below are general detail instructions; in-detail instructions are at https://pimylifeup.com/raspberry-pi-bluetooth/#:~:text=To%20load%20the%20Bluetooth%20GUI,Manager%20%E2%80%9D%20(2.).
@@ -81,5 +85,7 @@ Configure Rpi to run init.py on startup (similar to https://www.instructables.co
 - Omar Masaud (2020 -2021): name, architecture, and general solution (v1.0)
 - Arash Abarghooei (2022-2023): research & tests (v1.1)
 - Rodolfo Cossovich (2023): implementation (v1.2 and v1.3)
+- Alison Baker from CHEO
+- Tetra Society - Ottawa Chapter
 
 
