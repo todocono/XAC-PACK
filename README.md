@@ -5,10 +5,14 @@ This project was developed for the Children's Hospital Eastern Ontario, under th
 
 ## Set Up:
 If the wheelchair BLE controller is already added, the setup would only need:
-- Plug in the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
+- Plug the aux cable outputs from Arduino Leonardo in the XAC-Pack to the XAC.
+![Aux cable](AB.jpg?raw=true "Aux cables")
 - Plug in the USB-C power of the Raspberry Pi of the XAC-Pack.
-- Turn on the power (switch on the USB-C cable) ![USB cable](USB.jpg?raw=true "USB")
-- Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK ![Booting](boot.jpg?raw=true "Splash Screen")
+- Turn on the power (switch on the USB-C cable)
+![USB cable](USB.jpg?raw=true "USB")
+- Wait until the full booting-up process is done. You should see a Raspberry Pi splash screen, and then a light yellow screen showing XAC-PACK
+![Booting](boot.jpg?raw=true "Splash Screen")
+![Fnctioning Screen](screen.jpg?raw=true "Functioning Screen")
 
 ## Usage:
 - As the BLE pairs automatically, the movements of the wheelchair controller should translate into XAC movements.
@@ -22,6 +26,7 @@ With the XAC connected to a PC, run the XBOX accessories app. The test lab mode 
 By default, BLE should be pair/trusted/connected automatically. But if it's a new device, there are two ways to add them.
 
 You will need a keyboard connected to any of the USB of the Raspberry Pi. After connecting the keyboard, you should press the ESC key. The mouse is optional because the device has a touchscreen, but recommended.
+![Keyboard & Mouse](keyboard.jpg?raw=true "Keyboard & Mouse")
 
 Below are general detail instructions; in-detail instructions are at https://pimylifeup.com/raspberry-pi-bluetooth/#:~:text=To%20load%20the%20Bluetooth%20GUI,Manager%20%E2%80%9D%20(2.).
 
@@ -49,7 +54,8 @@ If the above steps are not working, you can try to go to Preferences/Bluetooth M
 
 ## Hardware req:
 Raspberry Pi 3B+ (probably any other with Bluetooth capabilities could also work)
-Arduino Nano 33 IoT (Leonardo or RP2040 with HID media USB capabilities could also work)
+Arduino Leonardo (Nano 33 IoT (or RP2040 with HID media USB capabilities could also work)
+![Booting](guts.jpg?raw=true "Inner cabling")
 
 ## Software:
 Raspbian OS 
